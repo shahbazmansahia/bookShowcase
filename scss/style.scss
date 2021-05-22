@@ -1,0 +1,20 @@
+$primary: #dc3545;
+$primary-overlay: rgba(220, 53, 69, 0.8);
+
+$secondary: #ffc107;
+$secondary-overlay: rgba(255, 193, 7, 0.8);
+
+body{
+    margin-top: 105px;
+}
+
+.navbar {
+    box-shadow: 2px 2px 5px $primary;
+    opacity: 0.9;
+    background: #dc3545;
+
+    .navbar-item{
+        font-size: 1.4rem;
+        padding-right: 1.4rem;
+    }
+}

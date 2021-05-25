@@ -22,6 +22,7 @@ body{
 #showcase {
     position: relative;
     background: url('../img/hallAbandon.jpg');
+    background-position: 0px -450px;
     min-height: 600px;
 
     .primary-overlay{
@@ -33,4 +34,22 @@ body{
         height: 100%;
     }
 
+}
+
+
+
+
+@media(max-width: 768px) {
+    #showcase {
+        min-height: 500px;
+        
+        h1 {
+            font-size: 2rem;
+        }
+
+    }
+
+    .mb-resp {
+        margin-bottom: 1rem;
+    }
 }

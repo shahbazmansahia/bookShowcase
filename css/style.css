@@ -27,6 +27,14 @@ body {
   margin: auto;
   border-bottom: 1px #dc3545 solid; }
 
+#reviews img {
+  margin-top: -50px; }
+#reviews .card-hover {
+  background: #fff;
+  color: #ffc107; }
+#reviews .fa {
+  color: #ffc107; }
+
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px; }

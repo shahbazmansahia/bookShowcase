@@ -36,10 +36,25 @@ body{
 
 }
 
-.info-header{
+.info-header {
     width: 50%;
     margin: auto;
     border-bottom: 1px #dc3545 solid;
+
+}
+
+#reviews { // FIX ME: HOVER NOT WORKING!
+    img {
+        margin-top: -50px;
+    }
+    .card-hover {
+        background: #fff;
+        color: $secondary;
+    }
+
+    .fa{
+        color: $secondary;
+    }
 }
 
 

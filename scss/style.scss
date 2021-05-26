@@ -43,13 +43,14 @@ body{
 
 }
 
-#reviews { // FIX ME: HOVER NOT WORKING!
+#reviews {
     img {
         margin-top: -50px;
     }
-    .card-hover {
-        background: #fff;
+    .card:hover {
+        background: $primary;
         color: $secondary;
+        
     }
 
     .fa{

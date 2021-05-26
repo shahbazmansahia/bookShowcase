@@ -29,8 +29,8 @@ body {
 
 #reviews img {
   margin-top: -50px; }
-#reviews .card-hover {
-  background: #fff;
+#reviews .card:hover {
+  background: #dc3545;
   color: #ffc107; }
 #reviews .fa {
   color: #ffc107; }

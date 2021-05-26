@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap Theme</title>
 </head>
-<body>
+<body id= "home" data-spy="scroll" data-target= "#main-nav">
     <!--START HERE!-->
     
-    <nav class="navbar navbar-expand-md bg-primary fixed-top py-4 text-warning">
+    <nav id= "main-nav" class="navbar navbar-expand-md bg-primary fixed-top py-4 text-warning">
         <div class="container">
             <a href="#home" class="navbar-brand text-secondary">
                 <img src="img/logoBKP.svg" width= "50" height="50" alt="An empty, abandoned hall with graffiti on the walls and moderate signs of aging">
@@ -36,7 +36,7 @@
                         <a href="#reviews" class="nav-link text-secondary">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link text-secondary">Contact</a>
+                        <a href="#contactUs" class="nav-link text-secondary">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -328,6 +328,60 @@
             </div>
         </div>
     </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contactUs" class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-secondary">
+                    <h3>Get In Touch</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta!</p>
+                    <form>
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder= "Name">
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text">
+                                <i class="fa fa-envelope-open"></i>
+                            </span>
+                            <input type="email" class="form-control" placeholder= "Email">
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                            <textarea type="text" class="form-control" placeholder= "Message" rows= "5"> </textarea>
+                        </div>
+
+                        <input type="submit" value= "Submit" class= "btn btn-outline-secondary btn-lg w-100">
+                    </form>
+                </div>
+
+                <div class="col-lg-3 align-self-center">
+                    <img src="img/LogoBKP.svg" alt="" class="img-fluid mt-5">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-secondary text-primary py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 ms-auto">
+                    <p class="lead">
+                        Copyright &copy; <span id="year"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--
         <span id= "year"></span>

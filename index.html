@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap Theme</title>
 </head>
-<body id= "home" data-spy="scroll" data-target= "#main-nav">
+<body id= "home" data-spy="scroll" data-target= "#navTracker"> 
     <!--START HERE!-->
     
-    <nav id= "main-nav" class="navbar navbar-expand-md bg-primary fixed-top py-4 text-warning">
+    <nav id= "navTracker" class="navbar navbar-expand-md bg-primary fixed-top py-4 text-secondary"> <!-- FIX ME: SCROLLSPY NOT WORKING (MAYBE?)-->
         <div class="container">
             <a href="#home" class="navbar-brand text-secondary">
                 <img src="img/logoBKP.svg" width= "50" height="50" alt="An empty, abandoned hall with graffiti on the walls and moderate signs of aging">
@@ -397,6 +397,23 @@
         // Get current year for the copyright
         $('#year').text(new Date().getFullYear());
 
+        //Init Scrollspy    FIX ME: SCROLL SPY NOT WORKING (MAYBE IT'S THE COLOR?)
+        $('body').scrollspy({target: '#navTracker'});
+
+        // Init Smooth Scrolling
+        $("#navTracker a").on('click', function (event) {
+            if(this.hash !== '') {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offSet().top
+                }, 900, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
     </script>
 </body>
 </html>

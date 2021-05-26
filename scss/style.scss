@@ -10,10 +10,10 @@ body{
 
 .navbar {
     box-shadow: 2px 2px 5px $primary;
-    opacity: 0.9;
+    opacity: 1.0;
     background: #dc3545;
 
-    .navbar-item{
+    .nav-item{
         font-size: 1.4rem;
         padding-right: 1.4rem;
     }

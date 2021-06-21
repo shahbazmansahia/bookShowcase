@@ -411,9 +411,9 @@
 
                 console.log("It gets to here!");
                 const hash = this.hash;
-
+                
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top
+                    scrollTop: $(hash).offset().top - 100       // subtracting 100px to compensate for the navHeight
                 }, 300, function(){
                     window.location.hash = hash;
                 });
